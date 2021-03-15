@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+
+/* variables */
+
+:root {
+    --green-color: #7ACC2D;
+    --white-color: white;
+    --black-color: #313337;
+    /* Espaciado */
+    --space: 10px;
+    /* Tipografia */
+    --normal: 12px;
+    /* Box Shadow*/
+    --box: 0px 0 2px 1px #e6e5e9;
+}
+
+html,
+body {
+    padding: 0px;
+    margin: 0px;
+    font-size: var(--normal);
+    font-family: 'Open Sans', sans-serif;
+}
+
+nav {
+    display: flex;
+    background-color: var(--green-color);
+    padding: var(--space);
+    color: var(--white-color);
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav li {
+    padding-left: 20px;
+    list-style: none;
+}
+
+nav ul a {
+    color: var(--black-color);
+    text-decoration: none;
+}
+
+nav ul a:hover {
+    color: var(--white-color);
+}
+
+
+/* MAIN SECTION */
+
+.main_section {
+    padding: 15%;
+    text-align: center;
+}
+
+.main_section_products {
+    padding: 15%;
+    text-align: left;
+    font-weight: bold;
+    font-size: 30px;
+    margin-top: -90px;
+}
+
+.products {
+    background-image: url("../images/curve.png");
+    height: 50px;
+    background-size: cover;
+    background-position: center top;
+    padding: 20%;
+    display: flex;
+}
+
+.products-page {
+    padding: 20%;
+    display: flex;
+}
+
+.product {
+    padding: var(--space);
+    margin-top: -350px;
+}
+
+.product .content {
+    background-color: var(--white-color);
+    padding: 15px;
+    box-shadow: var(--box);
+}
+
+.img_content {
+    text-align: center;
+}
+
+.main_button {
+    background-color: var(--green-color);
+    width: 100%;
+    padding: var(--space);
+    font-size: var(--normal);
+    color: var(--white-color);
+    border: 0;
+    border-radius: 2px;
+}
+
+.main_button:hover {
+    background-color: #5e9e22;
+    cursor: pointer;
+}
+
+
+/* footer */
+
+footer {
+    background-color: #313337;
+    color: white;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    left: 0;
+}
+
+footer ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 15px;
+    padding-left: 15px;
+    list-style: none;
+}
+
+footer li {
+    list-style: none;
+}
+
+footer li a {
+    color: var(--white-color);
+    text-decoration: none;
+}
+
+footer li a:hover {
+    text-decoration: none;
+}
